@@ -1,6 +1,7 @@
 package com.lhc.jenkinstest.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,5 +18,10 @@ public class HelloController {
     @GetMapping("/world")
     public String helloWorld() {
         return "hello world";
+    }
+
+    @PostMapping("/world")
+    public String helloHack() {
+        return "fuck off";
     }
 }
