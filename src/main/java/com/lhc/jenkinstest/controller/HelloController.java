@@ -24,4 +24,9 @@ public class HelloController {
     public String helloHack() {
         return "fuck off";
     }
+
+    @GetMapping("/nice")
+    public String nicejob() {
+        return "nice";
+    }
 }
